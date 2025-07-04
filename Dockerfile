@@ -42,7 +42,7 @@ RUN --mount=type=cache,id=s/8563e62f-b8e5-4214-9ab7-e41ca64fb4ce-/root/.cache/uv
 # Copy project files including models
 COPY --chown=appuser:appuser api ./api
 COPY --chown=appuser:appuser web ./web
-COPY --chown=appuser:appuser docker/scripts/ ./
+COPY --chown=appuser:appuser scripts/ ./
 RUN chmod +x ./entrypoint.sh
 
 # Set environment variables
