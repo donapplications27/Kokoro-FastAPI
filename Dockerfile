@@ -1,4 +1,4 @@
-FROM donovankellyazureadmin/kokoro-slim:withmodels
+FROM donovankellyazureadmin/kokoro:slim
 
 # Optional: Add runtime-only tweaks here
 WORKDIR /app
